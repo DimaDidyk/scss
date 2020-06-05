@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.min.css",
+	"sources": [
+		"../../src/scss/style.scss",
+		"../../src/scss/typography.scss"
+	],
+	"sourcesContent": [
+		"@import './typography.scss';\r\n\r\nhtml,\r\nbody{\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n",
+		"h1{\r\n}"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,IAAI,CACJ,IAAI,AAAA,CACF,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACX"
+}

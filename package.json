@@ -1,0 +1,27 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.4",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.0"
+  },
+  "scripts": {
+    "compile-styles": "node-sass --output-style compressed --source-map true --source-map-contents true src/scss/style.scss dist/css/style.min.css",
+    "process-styles": "npm run compile-styles",
+    "watch-style": "nodemon -e scss -x \"npm run process-styles\"",
+    "compile-all-styles": "node-sass --output-style compressed -o dist/css src/scss",
+    "process-styles-scss": "npm run compile-all-styles",
+    "watch-all": "nodemon -e scss -x \"npm run process-styles-scss\"",
+    "lint:scss": "stylelint src/scss/*.scss --syntax scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "stylelint": "^13.6.0"
+  }
+}
